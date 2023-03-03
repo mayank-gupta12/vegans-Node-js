@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+   
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
@@ -21,33 +23,27 @@
         <a href="">Rewards</a>
       </ul>
       <div class="icon">
-        <input class="tbsearchbar" type="text" placeholder="Search Product, brands, etc...">
-       <a href="/signin"> <img height="30" src="https://cdn.shopify.com/s/files/1/0612/9260/9676/t/2/assets/user.png" alt=""></a>
-       
-     <!-- <a href="/profile"><img width="30" src="data:image/png;base64,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" alt=""> </a> -->
-       
-       <img height="30" src="https://cdn.shopify.com/s/files/1/0612/9260/9676/t/2/assets/cart.png" alt="">
+        <input class="searchbar" type="text" placeholder="Search Product, brands, etc...">
+       <a href="/signin"> <img height="25" src="https://cdn.shopify.com/s/files/1/0612/9260/9676/t/2/assets/user.png" alt=""></a>
+       <img height="25" src="https://cdn.shopify.com/s/files/1/0612/9260/9676/t/2/assets/cart.png" alt="">
       </div>
     </nav>
-    <span class="pro">Storefront / Account</span>
     <div class="profile">
-     <div class="left">
-      <h2>My Account</h2>
+      <div class="left">
+        <span class="pro">Storefront / Account <a href="/edit">Edit Details 📝</a></span>
+        <h2>My Account</h2>
       <ul>
-        <li><%= user.firstName%> &emsp; &emsp; &emsp; <a href="/edit">📝</a></li>
-        <hr>
-        <li><%= user.email%> &emsp; &emsp;  <a href="/edit">📝</a> </li>
-        <hr>
-        <li><%= user.phone%>  &emsp; &emsp; &emsp;  <a href="/edit">📝</a></li>
-        <hr>
+        <li><%= user.firstName%> &emsp; &emsp; &emsp; <a href="/edit"></a></li>
+        <hr width="350">
+        <li><%= user.email%>  </li>
+        <hr width="350">
+        <li><%= user.phone%> </li>
+        <hr width="350">
         <a href="/logout"><li>Logout</li></a>
-        <hr>
+        <hr width="350">
       </ul>
     </div>
-      <div class="right">
-        <h1>Order History</h1>
-        <p>You haven't placed any orders yet</p>
-     </div>
+     
     </div>
     
     <img width="100%" src="https://cdn.shopify.com/s/files/1/0612/9260/9676/t/2/assets/grass-layer.jpg" alt="">

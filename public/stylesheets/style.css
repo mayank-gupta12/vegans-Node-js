@@ -7,6 +7,9 @@ html,body{
   height: 100%;
   width: 100%;
 }
+  .brand{
+    margin-bottom: 2%;
+  }
 nav{
   display: flex;
   justify-content: space-between;
@@ -27,16 +30,18 @@ nav ul a{
   align-items: center;
   /* background-color: aqua; */
   justify-content: space-between;
-  width: 23%;
+  width: 29%;
 }
+
 .searchbar{
   border-radius: 20px;
   padding: 8px 10px;
-  /* width: 60%; */
+  width: 80%;
+  background-color: azure;
 }
 .swiper {
   margin-top: 3%;
-  width: 80%;
+  width: 90%;
   height: 40%;
   /* background-color: red; */
 }
@@ -55,6 +60,291 @@ nav ul a{
   width: 100%;
   height: 100%;
 }
-.product img{
-  border-radius: 30px;
+.content h1{
+  margin: 3%;
+  margin-left: 43%;
 }
+.part4 h1{
+  padding-left: 37%;
+  margin: 3%;
+}
+.product{
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: space-around;
+  width: 90%;
+  margin-left: 5%;
+}
+.product .img{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  /* border: 5px solid black; */
+  box-shadow: 3px 0px 5px rgb(131, 127, 127);
+  width: 24%;
+  margin-bottom: 2%;
+  margin-left: 0;
+}
+.product img{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  /* margin-left: 2%; */
+  /* margin-bottom: 5%; */
+}
+.product .img h3{
+  margin-left: 40%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.part5{
+  height: 55vh;
+  margin-top: -0.3%;
+  background-color: RGB(109 206 86);
+  display: flex;
+  /* padding-left: 10%; */
+  justify-content: space-around;
+  color: white;
+  font-size: 1.5rem;
+  /* margin-top: 3%; */
+  padding-top: 3%;
+}
+.row1 ul{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.row1 ul a{
+  margin-top: 5%;
+  font-size: 1.3rem;
+
+}
+.row2 .social{
+  /* text-align: left; */
+  margin-top: 25%;
+  font-weight: 200;
+  font-size: 1.3rem;
+  /* margin-bottom: 3%; */
+  /* background-color: aquamarine; */
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+
+}
+.row3 ul{
+  margin-top: 10%;
+}
+.row3 ul li{
+  list-style-type: none;
+  margin-bottom: 3%;
+  font-size: 1.3rem;
+}
+.row4 p{
+  font-size: 1.3rem;
+
+}
+.row4 input{
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 110%;
+  /* word-spacing: 6px;
+  letter-spacing: 4px  ; */
+}
+.row4 button{
+  padding: 10px;
+  border-radius: 20px;
+  width: 110%;
+  border:1px solid black;
+  background-color: rgb(14, 79, 0);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.input{
+  /* border: 2px solid black; */
+  box-shadow: 1.5px 2px 15px rgba(141, 154, 165, 0.596);
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5%;
+  /* padding: 30px; */
+  padding-bottom: 30px;
+  padding-top: 5px;
+}
+.input form{
+  padding: 18px;
+  padding-left: 25px;
+}
+.input2{
+  /* border: 2px solid black; */
+  box-shadow: 1.5px 2px 15px rgba(141, 154, 165, 0.333);
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5%;
+  padding: 30px;
+}
+.input form h1{
+  margin-left: 23%;
+  margin-bottom: 10px;
+}
+
+.input form p{
+  margin-left: 20%;
+  color: rgb(141, 154, 165);
+  margin-bottom: 30px;
+}
+.input form input{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 90%;
+  outline: none;
+}
+.signup form input{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 90%;
+  outline: none;
+}
+.input form button{
+  width: 40%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 30%;
+  background-color:rgb(109,203,85);
+  color: white;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+}
+.input2 form button{
+  cursor: pointer;
+  border: none;
+  width: 45%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 28%;
+  background-color:rgb(109,203,85);
+  color: white;
+  font-weight: 600;
+  letter-spacing: .5px;
+  margin-bottom: 20px;
+}
+.input a{
+  margin-left: 39%;
+  /* padding: 10px; */
+  text-decoration: none;
+}
+.input2 p{
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.input2 h1{
+  margin-left: 32%;
+  margin-bottom: 15px;
+}
+.signup{
+  /* border: 2px solid black; */
+  width: 40%;
+  padding: 20px;
+  margin-left: 30%;
+  margin-top: 3%;
+  height: 78vh;
+  /* background-color: red; */
+  box-shadow: 1.5px 2px 15px rgba(141, 154, 165, 0.333);
+
+
+}
+.signup h1{
+  margin-left: 10%;
+  margin-bottom: 15px;
+}
+.signup p{
+  margin-bottom: 15px;
+  margin-left: 20%;
+}
+  .signup form button{
+    cursor: pointer;
+    border: none;
+    width: 45%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 28%;
+    background-color:rgb(109,203,85);
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+  }
+  .profile{
+    width: 30%;
+    margin-top: 3%;
+    margin-left: 4%;
+    display: flex;
+    padding: 20px 0px 30px 20px;
+    justify-content: space-around;
+  }
+  .profilee{
+    width: 30%;
+    margin-top: 3%;
+    margin-left: 5%;
+    display: flex;
+    padding: 20px 0px 30px 20px;
+    justify-content: space-around;
+  }
+  .profilee .left{
+    width: 100%;
+  }
+  .left{
+    /* border: 2px solid rgb(117, 111, 111); */
+  box-shadow: 1.5px 2px 15px rgba(141, 154, 165, 0.333);
+
+    padding: 20px;
+
+  }
+  .profile h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .profilee h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .profile li{
+    padding: 5px;
+    list-style-type: none;
+  }
+  .profile ul a{
+    text-decoration: none;
+    color: red;
+  }
+  .profilee input{
+    margin-top: 20px;
+    width: 75%;
+    outline: none;
+    padding: 5px  ;
+  }
+  .profilee button{
+    margin-top: 7%;
+    padding: 5px;
+    margin-left: 13%;
+    background-color:rgb(109,203,85);
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  .profile a{
+    text-decoration: none;
+    margin-left: 65%;
+    color: blue;
+    font-size: 1.2vmax;
+  }

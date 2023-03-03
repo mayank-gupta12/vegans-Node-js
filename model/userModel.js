@@ -6,6 +6,10 @@ const userModel = new mongoose.Schema({
     password: String,
     phone:String,
     lastname:String,
+    cart:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"product"
+    }]
 
 })
 userModel.plugin(plm,{usernameField: "email"})
