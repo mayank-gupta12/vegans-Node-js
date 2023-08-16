@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 const User = require("../model/userModel")
 const Product = require("../model/product")
-
 const passport = require("passport")
 const localStrategy = require("passport-local")
 passport.use(User.createStrategy())
@@ -13,11 +12,9 @@ router.get('/', async function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-
 router.post('/signup', function(req, res, next) {
   res.render('signup', {title: 'Express'});
 });
-
 
 router.post('/create', function(req, res, next) {
  const {firstName, lastName, password, email, phone} = req.body
@@ -38,6 +35,7 @@ router.get('/signin', function(req, res, next) {
   }
   res.render('signin', { title: 'Express' });
 });
+
 router.get('/logout', isLoggedIn, function(req, res, next) {
   req.logOut(function(){
     res.redirect('/');
@@ -54,9 +52,9 @@ function isLoggedIn (req, res,next){
     next()
     return;
   }
-  
   res.redirect("/profile");
 }
+
 router.get('/profile', isLoggedIn, function (req, res, next) {
   res.render("profile", {user: req.user} )
 });
@@ -65,10 +63,9 @@ router.get('/edit', isLoggedIn, function (req, res, next) {
 });
 router.post('/edit/:id', async function (req, res, next) {
   const { firstName, email, phone } = req.body;
-  
   const user = await User.findByIdAndUpdate(req.params.id,req.body)
   await user.save()
   res.redirect("/edit")
-
+  
 });
 module.exports = router;
